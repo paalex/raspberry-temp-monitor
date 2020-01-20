@@ -6,14 +6,14 @@ console.log(`Your port is ${process.env.PORT}`); // 3000
 
 const {promise: gpiop} = gpio;
 
-// gpio.setup(7, gpio.DIR_IN, readInput);
-// function readInput(err) {
-//   if (err) throw err;
-//   gpio.read(7, function (err, value) {
-//     if (err) throw err;
-//     console.log('The value is ' + value);
-//   });
-// }
+gpio.setup(7, gpio.DIR_IN, readInput);
+function readInput(err) {
+  if (err) throw err;
+  gpio.read(7, function (err, value) {
+    if (err) throw err;
+    console.log('The value is ' + value);
+  });
+}
 //
 // gpiop.setup(7, gpiop.DIR_OUT)
 //   .then(() => {
