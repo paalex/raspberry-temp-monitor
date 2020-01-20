@@ -1,0 +1,23 @@
+{
+  "name": "raspberry-temp-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paalex/raspberry-temp-monitor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paalex/raspberry-temp-monitor/issues"
+  },
+  "homepage": "https://github.com/paalex/raspberry-temp-monitor#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "rpi-gpio": "^2.1.5"
+  }
+}
